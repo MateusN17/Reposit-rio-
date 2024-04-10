@@ -9,4 +9,4 @@ os.system('cls')
 #Chama os métodos de "Aluno"
 aluno.dizer_olá()
 aluno.curso(x)
-aluno.salário(y)
+aluno.salário(y) 
