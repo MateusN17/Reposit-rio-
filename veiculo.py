@@ -23,7 +23,7 @@ class Moto(Veículo):
     def empinar(self):
         print(f"A moto {self.marca} está empinando.")
     def escolha(self):
-        print(f"A escolha da Moto foi da marca {self.marca} e de modelo {self.modelo}.")
+        print(f"A escolha da Moto foi da marca {self.marca}, com {self.cilindrada} e de modelo {self.modelo}.")
 escolha=input("Escolha para ver os resultados entre (Automóveis, Carro e Moto): ")
 if escolha=="Automóveis" or escolha=="automóveis":
     veiculo_generico=Veículo(marca=input("Insira a marca do veículo: "),modelo=input("Insira o modelo: "))
