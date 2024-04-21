@@ -1,0 +1,14 @@
+body{
+    background-color:black;
+}
+.título{
+    color: #b22222;
+    text-align:center;
+    font-family:verdana;
+}
+#parágrafo{
+    font-family:verdana;
+    font-size:20px;
+    color:rgb(76, 110, 99);
+    text-align:center;
+}
