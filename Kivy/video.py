@@ -3,7 +3,8 @@ from kivy.uix.video import Video
 
 class VideoPlayer(App):
     def build(self):
-        return Video(source='', state='play')
+        video.state="play"
+        video= Video(source="/Users/mateu/Downloads/ok.mp4")
 
 if __name__ == '__main__':
     VideoPlayer().run()

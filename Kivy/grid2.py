@@ -19,9 +19,9 @@ class MinhaApp(App):
         #Coluna à direita dividida em três partes iguais
         coluna_direita=GridLayout(cols=1, rows=3)
         for i in range(3):
-            botao=Button(text=f'Botão {1+7}')
+            botao=Button(text=f'Botão {i+7}')
             coluna_direita.add_widget(botao)
-        #Adicionando as colunas ao layout principal
+        #Adicionando as colunas ao layout principalpython/Arquivos_AulaAtividade/login.py
         layout_principal.add_widget(coluna_esquerda) 
         layout_principal.add_widget(coluna_direita)
         return layout_principal
