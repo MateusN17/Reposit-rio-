@@ -1,3 +1,8 @@
+from kivy.config import Config
+
+Config.set('graphics', 'width', '360')
+Config.set('graphics', 'height', '640')
+Config.set('graphics', 'resizable', False)
 from kivy.app import App
 from kivy.uix.boxlayout import BoxLayout
 from kivy.uix.label import Label
@@ -18,7 +23,11 @@ class BorderedCheckBox(CheckBox):
         self.canvas.before.clear()
         with self.canvas.before:
             Color(0, 0, 0)  # Cor preta
-            Rectangle(pos=self.pos, size=self.size, width=2)  # Borda preta
+            x = self.pos[0]  + self.width * 0.45  # Altere o valor 0.2 conforme necessário
+            y = self.pos[1] + self.height * (0.3)  # Altere o valor 0.2 conforme necessário
+            width = self.width * 0.1  # Altere o valor 0.6 conforme necessário
+            height = self.height * 0.4
+            Rectangle(pos=(x, y), size=(width, height), width=2)  # Borda preta
 
 class Telalogin(BoxLayout):
     def __init__(self, **kwargs):
@@ -77,10 +86,10 @@ class Telalogin(BoxLayout):
 
 class Umatela(App):
     def build(self):
-        Window.clearcolor = (1, 1, 1, 1)
+        Window.clearcolor = (1,1,1,1)
         return Telalogin()
 
-Window.size = (360, 640)  
+  
 
 if __name__ == '__main__':
     Umatela().run()

@@ -9,9 +9,9 @@ from kivy.uix.label import Label
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 from kivy.uix.image import AsyncImage
-from kivy.core.window import Window
-from kivy.graphics import Color, Rectangle
 from kivy.uix.checkbox import CheckBox
+from kivy.graphics import Color, Rectangle
+from kivy.core.window import Window
 from kivy.utils import get_color_from_hex
 
 class BorderedCheckBox(CheckBox):
@@ -23,7 +23,12 @@ class BorderedCheckBox(CheckBox):
         self.canvas.before.clear()
         with self.canvas.before:
             Color(0, 0, 0)  # Cor preta
-            Rectangle(pos=self.pos, size=self.size, width=2)  # Borda preta
+            x = self.pos[0]  + self.width * 0.45 
+            y = self.pos[1] + self.height * 0.3
+            width = self.width * 0.1
+            height = self.height * 0.4
+            Rectangle(pos=(x, y), size=(width, height), width=2)  # Borda preta
+
 class Telalogin(BoxLayout):
     def __init__(self, **kwargs):
         super(Telalogin, self).__init__(**kwargs)
@@ -86,7 +91,6 @@ class Umatela(App):
     def build(self):
         Window.clearcolor = (1, 1, 1, 1)
         return Telalogin()
-  
 
 if __name__ == '__main__':
     Umatela().run()
