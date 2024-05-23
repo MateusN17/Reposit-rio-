@@ -23,6 +23,7 @@ firebase_config = {
     "databaseURL": "https://doaacao-d8007.firebaseio.com"
 }
 
+
 # Inicialize Pyrebase
 firebase = pyrebase.initialize_app(firebase_config)
 auth = firebase.auth()
