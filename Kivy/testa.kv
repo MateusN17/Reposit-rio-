@@ -1,0 +1,29 @@
+<CustomTextInput@TextInput>:
+    background_normal: 'Rectangle 5.png'
+    background_active: 'Rectangle 5.png'
+    background_disabled_normal: 'Rectangle 5.png'
+    background_disabled_active: 'Rectangle 5.png'
+    background_color: [1, 1, 1, 0]
+    foreground_color: [0, 0, 0, 1]
+    font_size: 16
+    padding: [10, (self.height - self.line_height) / 2]
+
+<SearchBar>:
+    orientation: 'horizontal'
+    padding: [10, 5]
+    spacing: 5
+    canvas.before:
+        Color:
+            rgba: 1, 1, 1, 1
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size
+            radius: [10, 10, 10, 10]
+
+    CustomTextInput:
+        id: pesquisa
+        hint_text: "Pesquisar"
+        multiline: False
+        size_hint: (0.8, None)
+        height: "30dp"
+        padding: [5, 0]

@@ -1,0 +1,44 @@
+MDScreen:
+    MDNavigationLayout:
+        ScreenManager:
+            Screen:
+                MDBottomNavigation:
+                    background_color: 1, 1, 1, 1
+                    selected_color_background: 'teal'
+                    text_color_active: 'lightgray'
+                    MDBottomNavigationItem:
+                        name: 'primeira tela'
+                        text: 'Home'
+                        icon: 'home'
+                        halign: 'center'
+                        MDTopAppBar:
+                            pos_hint:{'center_x': 0.5, 'center_y': 0.967}# Posiciona a barra de topo no topo da tela
+                            elevation: 0  # Ajusta a elevação (sombreamento) da barra de topo
+                        MDIconButton:
+                            icon: 'dots-vertical'
+                            theme_text_color: 'Custom'
+                            text_color: 1,1,1,1
+                            pos_hint: {'center_x': 0.96, 'center_y': 0.99}
+                        MDLabel:
+                            text: 'Home'
+                            halign: 'center'
+                            pos_hint: {'center_x': 0.1, 'center_y': 0.96}
+                            bold: True
+                            font_size: dp(20)
+                            theme_text_color: 'Custom'
+                            text_color: 1,1,1,1
+                    
+                    MDBottomNavigationItem:
+                        name: 'segunda tela'
+                        text: 'Explorar'
+                        icon: 'magnify'
+                        halign: 'center'
+                        MDTopAppBar:
+                            pos_hint: {'center_x': 0.5, 'center_y': 0.967}  # Posiciona a barra de topo no topo da tela
+                            elevation: 0  # Ajusta a elevação (sombreamento) da barra de topo               
+
+                    MDBottomNavigationItem:
+                        name: 'terceira tela'
+                        text: 'Perfil'
+                        icon: 'account'
+                        halign: 'center'
