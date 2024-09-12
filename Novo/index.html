@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="  -UA-Compatible" content="IE=edge">
+<meta name="keywords" content="Site Mobile, Site Responsivo, Responsividade" />
+<title>Site Responsivo</title>
+<meta name="description" content="Site prático de Responsividade Mobile">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Ítalo Nunes">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel= 'https://fonts.googleaps.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/109/109232.png">
+</head>
+<body>
+    <!-- CABEÇALHO --> 
+    <header class="cabecalho container">
+        <a href="index.html"><h1 class="logo"> Site Responsivo </h1></a>
+        <button class="btn-menu bg-gradient"><i class="fa fa-bars fa-lg"></i></button>
+        <nav class="menu">
+            <a class="btn-close"><i class="fa fa-times"></i></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cliente</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>          
+    </header>
+    <!-- BANNER --> 
+    <div class="banner container">
+        <div class="title">
+            <h2> Ousadia e Alegria </h2>
+            <h3> Seja sempre o melhor no que faz, o resto é resto!</h3>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-cadastrar bg-white radius"> Cadastrar <i class="fa fa-arrow-circle-right"></i></button>
+            <button class="btn btn-sobre bg-black radius"> Sobre <i class="fa fa-question-circle"></i></button>
+        </div>
+    </div>
+    <!-- SERVICOS --> 
+    <main class="servicos container">
+        <article class="servico bg-white radius">
+            <a href="#"><img src="https://dogtime.com/wp-content/uploads/sites/12/2023/10/GettyImages-1037524792-e1696604393664.jpg?w=1024" alt="Campanhas publicitárias"></a>
+            <div class="inner">
+                <a href="#"> MASTIM TIBETANO </a>
+                <h4>TIBET</h4>
+                <p>O Mastim Tibetano é um cão imponente e robusto, com uma pelagem longa e densa que o protege das intempéries. Sua aparência massiva e sua natureza protetora fazem dele um excelente guardião. É um cão leal e independente, que pode ser reservado com estranhos, mas extremamente dedicado à sua família.</p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <a href="#"><img src="https://blog-static.petlove.com.br/wp-content/uploads/2021/02/mastim-napolitano-doencas-petlove.jpg" alt="Marketing Digital"></a>
+            <div class="inner">
+                <a href="#"> MASTIM NAPOLITANO </a>
+                <h4>ITÁLIA</h4>
+                <p>O Mastim Napolitano é notável por suas dobras de pele soltas e enrugadas, o que lhe confere um visual único. É um gigante gentil, com um temperamento calmo e uma lealdade profunda para com seus donos. Embora seja protetor e possa se mostrar reservado com estranhos, é geralmente um cão afetuoso e tranquilo.</p>
+            </div>
+        </article>
+        <article class="servico bg-white radius">
+            <a href="#"><img src="https://cdn.britannica.com/02/234902-050-E6163C4B/Brindle-mastiff-dog.jpg" alt="Criação de Sites"></a>
+            <div class="inner">
+                <a href="#"> MASTIM INGLÊS </a>
+                <h4> INGLATERRA </h4>
+                <p>O Mastim Inglês é um exemplo clássico de força e majestade. Com uma estrutura corpulenta e uma pelagem curta, esse cão é conhecido por seu comportamento equilibrado e afetuoso. Ele é um companheiro fiel e protetor, que se adapta bem à vida em família e precisa de uma socialização adequada para se dar bem com outros animais e pessoas.</p>
+            </div>
+        </article>
+    </main>
+    <!-- NEWSLETTER -->
+    <section class="newsletter container bg-black">
+        <h2> Inscreva-se agora! </h2>
+        <h3>  Receba novidades, dicas e muito mais </h3>
+        <form>
+            <input class="bg-black radius" type="email" name="email" placeholder="Seu email">
+            <button class="bg-white radius"> Cadastrar </button>
+        </form>
+    </section>
+    <!-- RODAPÉ -->
+    <footer class="rodape container bg-gradient">
+        <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-google"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-envelope"></i></a>
+        </div>
+        <p class="copyright">
+        Copyright © Ítalo Nunes 2022. Todos os direitos reservados.
+    </footer>       
+    
+    <!-- JQUERY --> 
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+    $(".btn-menu").click(function(){
+        $(".menu").show();
+    });
+    $(".btn-close").click(function(){
+        $(".menu").hide();
+    });
+    </script>      
+</body>
+</html>
